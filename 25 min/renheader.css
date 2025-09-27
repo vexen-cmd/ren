@@ -1,0 +1,21 @@
+ header{
+    border-bottom: 1px solid #1d1d1d;
+    
+ }
+.nav{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-transform: capitalize;
+     font-family: "Montserrat", sans-serif;
+    color: #808791;
+    transition: 0.3s ease-in-out;
+}
+
+.nav p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}

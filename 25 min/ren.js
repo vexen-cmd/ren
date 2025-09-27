@@ -17,13 +17,13 @@ function play() {
       minutes = 0
       return clearInterval(timer)
     }
-    let innerHtmlText
+    
    if (minutes == 24 && seconds == 59) {
-      innerHtmlText = `00:${minutes + 1}:00`
-    } else {
-      innerHtmlText = `00:${minutes}:${seconds}`
+      minutes+1
     }
-    document.querySelector('.ren-clock').innerHTML = innerHtmlText;
+
+    document.querySelector('.min').innerHTML = minutes;
+    document.querySelector('.sec').innerHTML = seconds;
   }, 1000);
 };
 
@@ -40,17 +40,21 @@ document.querySelector('.js-button-pause').addEventListener('click', () => {
 
 
 document.querySelector('.js-button-reset').addEventListener('click', () => {
-  minutes = 0
-  seconds = 0
+  minutes = `00`
+  seconds = `00`
   clearInterval(timer)
-  let displayTimer = `  00:00:00`
-  document.querySelector('.ren-clock').innerHTML = displayTimer
+  document.querySelector('.min').innerHTML = minutes;
+  document.querySelector('.sec').innerHTML = seconds;
+  
 });
 
-//couldn't get this part will try tommorrow
+//done
+
 function pauseFunction() {
-  if (pause == true) {
+  if (pause == false) {
+    clearInterval(timer)
     console.log('shanti')
+    pause=true
   } else {
     clearInterval(timer)
     pause = false

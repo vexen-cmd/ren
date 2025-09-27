@@ -1,0 +1,49 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #101922;
+}
+.clock-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 100px;
+  font: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #117fee;
+}
+
+.min,
+.sec {
+  padding: 30px;
+  background-color: #102e4a;
+  border-radius: 4px;
+  margin: 0px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.css-button {
+    position: relative;
+  background-color: #117fee;
+  border: none;
+ padding: 15px 45px 15px 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  font: bold;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+  
+}
+
+.css-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
