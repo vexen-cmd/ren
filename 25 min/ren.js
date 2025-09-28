@@ -14,17 +14,17 @@ function play() {
     }
 
     if (minutes >= 25) {
-      minutes = 0
       return clearInterval(timer)
     }
     
    if (minutes == 24 && seconds == 59) {
-      minutes+1
+    seconds=`00`
+     minutes= minutes+1
     }
 
     document.querySelector('.min').innerHTML = minutes;
     document.querySelector('.sec').innerHTML = seconds;
-  }, 1000);
+  }, 1);
 };
 
 
@@ -60,5 +60,23 @@ function pauseFunction() {
     pause = false
   }
 };
+
+function fiveMin(z,x){
+
+  let timer=setInterval(() => {
+    z++
+    if(z>=60){
+      z=0
+      x++
+    }
+  
+    if(x>=5){
+     return clearInterval(timer)
+    }
+    console.log(x,z)
+  },1 );
+}
+
+fiveMin(0,0)
 
 
