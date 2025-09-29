@@ -1,4 +1,4 @@
-import { fiveMin } from "../25 min/5min.js";
+
 
 let timer;
 let pause = false;
@@ -22,10 +22,13 @@ function play() {
       minutes = minutes + 1
     }
 
+    
     if (minutes == 25 && seconds == 0) {
       setTimeout(() => {
-        alert('hogya na')
-        fiveMin(0, 0)
+        document.querySelector('.js-newpage').innerHTML=`
+        <button class="newpage-button">
+           <a href="../25 min/rest/rest.html"> rest </a> </button>`
+       
       }, 1000);
     }
 
@@ -55,7 +58,8 @@ document.querySelector('.js-button-reset').addEventListener('click', () => {
 
 });
 
-//done
+
+
 
 function pauseFunction() {
   if (pause == false) {

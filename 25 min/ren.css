@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: #101922;
+
 }
 .clock-alignment {
   display: flex;
@@ -46,4 +47,79 @@ body {
 .css-button:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.js-newpage{
+  display: flex;
+  justify-content: center;
+}
+
+.newpage-button{
+ padding: 20px 205px 20px 205px;
+ margin-top: 25px;
+ background-color: #117fee;
+ border: none;
+ border-radius: 4px;
+}
+
+.newpage-button a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+
+}
+
+.todo{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.res-input{
+  padding: 15px;
+  width: 315px;
+  font-size: 18px;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: #101922;
+  color: white;
+ font-family: "Montserrat", sans-serif;
+}
+
+.res-add{
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+ padding: 16px 50px 16px 50px;
+ color: white;
+ background-color: #117fee;
+ border: none;
+ border-radius: 4px; 
+}
+
+.res-input::placeholder{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.res-add:hover{
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.todays-task{
+  display: flex;
+  justify-content: center;
+  color: white;
+    font-family: "Montserrat", sans-serif;
+  
+    text-transform: capitalize;
+    margin: 40px 360px 10px 0px;
+
 }
