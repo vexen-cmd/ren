@@ -81,17 +81,10 @@ body {
 
 }
 
-.todo{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .res-input{
-  padding: 15px;
+  padding:15px 4px ;
+  margin-top: 3px;
   width: 315px;
   font-size: 18px;
    box-sizing: border-box;
@@ -113,23 +106,42 @@ body {
  border-radius: 4px; 
 }
 
-.res-input::placeholder{
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-}
 
 .res-add:hover{
   cursor: pointer;
   scale: 1.01;
 }
 
-.todays-task{
+.todolist{
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
   color: white;
-    font-family: "Montserrat", sans-serif;
-  
-    text-transform: capitalize;
-    margin: 40px 360px 10px 0px;
-
 }
+
+.todo-p{
+  background-color: black;
+  padding: 15px ;
+  border-radius: 6px;
+}
+
+.buttons{
+  padding: 4px;
+  color: #117fee;
+  background-color: #101922;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  }
+
+  .button-div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }

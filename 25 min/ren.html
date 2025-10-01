@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>25-min</title>
 
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 
     <link rel="stylesheet" href="ren.css">
@@ -25,33 +26,40 @@
 
     <section class="ren-clock">
         <div class="clock-alignment">
-        <p class="min">00</p>
-        <p class="colon">:</p>
-        <p class="sec">00</p>
-    </div>
+            <p class="min">00</p>
+            <p class="colon">:</p>
+            <p class="sec">00</p>
+        </div>
 
-    <div class="button">
-        <button class="js-button css-button">
-            play</button>
-        <button class="js-button-pause css-button">pause</button>
-        <button class="js-button-reset css-button">reset </button>
-    </div>
-    
-</section>
+        <div class="button">
+            <button class="js-button css-button">
+                play</button>
+            <button class="js-button-pause css-button">pause</button>
+            <button class="js-button-reset css-button">reset </button>
+        </div>
 
-<div class="js-newpage"></div>
+    </section>
 
-<section class="todolist">
-    <h class="todays-task">today's task</h>
- <div class="todo">
-    <input placeholder="your tasks" class="js-input res-input">
-    <button class="js-add res-add">add</button>
- </div>
- <div class="your-todo"></div>
- </section>
+    <div class="js-newpage"></div>
+
+    <section class="todolist">
+
+        <div class="alignment-todo">
+
+        <h class="todays-task">today's task</h>
 
 
- 
+        <div class="todo">
+            <input placeholder="your tasks" class="js-input res-input">
+            <button class="js-add res-add">add</button>
+            <div class="your-todo"></div>
+        </div>
+        </div>
+
+    </section>
+
+
+
 
     <script type="module" src="ren.js"></script>
     <script src="todo.js"></script>
