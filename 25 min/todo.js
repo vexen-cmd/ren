@@ -5,6 +5,7 @@ document.querySelector('.js-add').addEventListener('click', () => {
   array.push(innerELem.value)
   innerELem.value = ''
   render()
+
 });
 
 function render() {
@@ -33,6 +34,14 @@ function render() {
       array.splice(i, 1)
       render()
     })
+  });
+
+   document.querySelectorAll('.js-done').forEach((button,i) => {
+    button.addEventListener('click', () => {
+      
+  alert('congo you did it ');
+
+    });
   });
 };
 
