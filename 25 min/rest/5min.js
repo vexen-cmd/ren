@@ -3,6 +3,7 @@ let second=0;
 let minute=0;
 let timer;
 let pause=false
+
 function fiveMin(){
 
   timer=setInterval(() => {
@@ -15,10 +16,29 @@ function fiveMin(){
     if(minute>=5){
      return clearInterval(timer)
     }
+
+    if (minute==4 && second==59) {
+       setTimeout(() => {
+
+        audio();
+
+        setTimeout(() => {
+          alert('rest is over')
+        }, 1000);
+
+        document.querySelector('.js-newpage').innerHTML = `
+        <button class="newpage-button">
+           <a href="../ren.html">back</a> </button>`
+
+      }, 1000);
+    }
+
      document.querySelector('.min').innerHTML = minute;
     document.querySelector('.sec').innerHTML = second;
   },1 );
 }
+
+
 
 
 document.querySelector('.js-button').addEventListener('click', () => {
@@ -54,3 +74,9 @@ function pauseFunction() {
     pause = false
   }
 };
+
+
+function audio() {
+  const audio = new Audio("../audio/beep.mp3");
+  audio.play();
+}

@@ -2,8 +2,8 @@
 
 let timer;
 let pause = false;
-let minutes=0;
-let seconds=0
+let minutes = 0;
+let seconds = 0
 function play() {
 
   timer = setInterval(() => {
@@ -22,13 +22,20 @@ function play() {
       minutes = minutes + 1
     }
 
-    
+
     if (minutes == 25 && seconds == 0) {
       setTimeout(() => {
-        document.querySelector('.js-newpage').innerHTML=`
+
+        audio();
+
+        setTimeout(() => {
+          alert('25 min is over')
+        }, 1000);
+
+        document.querySelector('.js-newpage').innerHTML = `
         <button class="newpage-button">
            <a href="../25 min/rest/rest.html"> rest </a> </button>`
-       
+
       }, 1000);
     }
 
@@ -64,13 +71,17 @@ document.querySelector('.js-button-reset').addEventListener('click', () => {
 function pauseFunction() {
   if (pause == false) {
     clearInterval(timer)
-    console.log('shanti')
     pause = true
   } else {
     clearInterval(timer)
     pause = false
   }
 };
+
+function audio() {
+  const audio = new Audio("../25 min/audio/beep.mp3");
+  audio.play();
+}
 
 
 
