@@ -13,11 +13,11 @@ function fiveMin(){
       minute++
     }
   
-    if(minute>=5){
+    if(minute>=10){
      return clearInterval(timer)
     }
 
-    if (minute==4 && second==59) {
+    if (minute==9 && second==59) {
        setTimeout(() => {
 
         audio();
@@ -27,8 +27,12 @@ function fiveMin(){
         }, 1000);
 
         document.querySelector('.js-newpage').innerHTML = `
-        <button class="newpage-button">
-           <a href="../ren.html">back</a> </button>`
+        <button class="newpage-button1">
+           <a  href="/50min/ren.html">back</a> </button>
+
+            <button class="newpage-button1">
+           <a href="/res front/res.html">res</a> </button>
+           `
 
       }, 1000);
     }

@@ -1,0 +1,161 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #101922;
+}
+.clock-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 100px;
+  font: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #117fee;
+}
+
+.min,
+.sec {
+  padding: 30px;
+  background-color: #102e4a;
+  border-radius: 4px;
+  margin: 0px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.css-button {
+  position: relative;
+  background-color: #117fee;
+  border: none;
+  padding: 15px 45px 15px 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  font: bold;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+
+.css-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.js-newpage {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newpage-button {
+  padding: 20px 205px 20px 205px;
+  margin-top: 25px;
+  background-color: #117fee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: for all 0.3ms ease-in-out;
+}
+
+.newpage-button:hover {
+  transform: scale(1.01);
+}
+
+.newpage-button:active {
+  transform: scale(1.02);
+}
+
+.newpage-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.res-input {
+  padding: 15px 4px;
+  margin-top: 3px;
+  width: 315px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: #101922;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.res-add {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  padding: 16px 50px 16px 50px;
+  color: white;
+  background-color: #117fee;
+  border: none;
+  border-radius: 4px;
+}
+
+.res-add:hover {
+  cursor: pointer;
+  scale: 1.01;
+}
+
+.todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.todo-p {
+  background-color: black;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.buttons {
+  padding: 4px;
+  color: #117fee;
+  background-color: #101922;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.newpage-button1 {
+  padding: 20px 90px 20px 90px;
+  margin-top: 25px;
+  background-color: #117fee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: for all 0.3ms ease-in-out;
+}
+
+.newpage-button1 a {
+  text-decoration: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}

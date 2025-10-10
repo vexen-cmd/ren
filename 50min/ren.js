@@ -13,28 +13,28 @@ function play() {
       minutes++
     }
 
-    if (minutes >= 25) {
+    if (minutes >= 50) {
       return clearInterval(timer)
     }
 
-    if (minutes == 24 && seconds == 59) {
+    if (minutes == 49 && seconds == 59) {
       seconds = `00`
       minutes = minutes + 1
     }
 
 
-    if (minutes == 25 && seconds == 0) {
+    if (minutes == 50 && seconds == 0) {
       setTimeout(() => {
 
         audio();
 
         setTimeout(() => {
-          alert('25 min is over')
+          alert('50 min is over')
         }, 1000);
 
         document.querySelector('.js-newpage').innerHTML = `
         <button class="newpage-button">
-           <a href="../25 min/rest/rest.html"> rest </a> </button>`
+           <a href="../50min/rest/rest.html"> rest </a> </button>`
 
       }, 1000);
     }
